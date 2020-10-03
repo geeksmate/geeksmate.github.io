@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>GeeksMate-A Computer Science Portal</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Bootstrap 4 Template For Software Startups">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible mr-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon mr-2" src="assets/images/coderdocs-logo.svg" alt="logo"><span class="logo-text">Geeks<span class="text-alt">Mate</span></span></a></div>    
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+	                <div class="top-search-box d-none d-lg-flex">
+		                <form class="search-form">
+				            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+				            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				        </form>
+	                </div>
+	
+		            <a href="https://www.linkedin.com/in/ankitthakur00/" class="btn btn-primary d-none d-lg-flex">Get in Touch</a>
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+		        </form>
+            </div>
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder mr-2"><i class="fas fa-map-signs"></i></span>Arrays</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">1. Pair with Given Sum</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">2. Zero Sum Subarray</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">3 .K Sum Subarray</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">4 .Sort Binary Array</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5">5 .Duplicate in Array</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-6">6 .Maximum Subarray	</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder mr-2"><i class="fas fa-map-signs"></i></span>Linked List</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">1. Reverse Linked List</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">2. Detect Cycle</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">3. Merge Two Sorted Lists</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder mr-2"><i class="fas fa-map-signs"></i></span>Tree</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">1. Depth of Binary Tree</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">2. Same Tree </a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">3. Invert Binary Tree</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder mr-2"><i class="fas fa-cogs"></i></span>Dynammic Programming</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">1. Longest Common Subsequence</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">2. Longest Palindromic Substring</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">3. Nth Stairs</a></li>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="section-1">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Arrays<span class="docs-time">Last updated: 2019-06-01</span></h1>
+					    <section class="docs-intro">
+						    <p>Is the array sorted or partially sorted? If it is, some form of binary search should be possible. This also usually means that the interviewer is looking for a solution that is faster than O(n).
+
+								Can you sort the array? Sometimes sorting the array first may significantly simplify the problem. Make sure that the order of array elements do not need to be preserved before attempting a sort.
+								
+								For questions where summation or multiplication of a subarray is involved, pre-computation using hashing or a prefix/suffix sum/product might be useful.
+								
+								If you are given a sequence and the interviewer asks for O(1) space, it might be possible to use the array itself as a hash table. For example, if the array only has values from 1 to N, where N is the length of the array, negate the value at that index (minus one) to indicate presence of that number.
+							</p>	
+								<h4>Arrays are sequences</h4>
+								<p>
+								Are there duplicate values in the array, would it affect the answer?
+								
+								When using an index to iterate through array elements, be careful not to go out of bounds.
+								
+								Be mindful about slicing or concatenating arrays in your code. Typically, slicing and concatenating arrays require O(n) time. Use start and end indices to demarcate a subarray/range where possible.
+								
+								Sometimes you can traverse the array from the right rather than from the left.
+								
+								Master the sliding window technique that applies to many subarray problems.
+								
+								When you are given two arrays to process, it is common to have one index per array (pointer) to traverse/compare the both of them. For example, we use the same approach to merge two sorted arrays.</p>
+							<br>	
+							Refer this<br>
+							<a href="https://leetcode.com/problems/minimum-window-substring/discuss/26808/here-is-a-10-line-template-that-can-solve-most-substring-problems">Master Sliding window</a>
+							</p>
+
+							</section><!--//docs-intro-->
+						<br>
+						<br>
+						<br>
+						<br>
+						<div class="docs-code-block">
+
+
+</code></pre>
+						</div><!--//docs-code-block-->
+						
+						
+				    </header>
+					
+					<section class="docs-section" id="item-1-1">
+						<h2 class="section-heading">1. Find Pair with given Sum</h2>
+						<p>Given an unsorted pair of integres.find a pair with given sum in it.</p>
+						<h5>Refer:</h5>
+						<ul>
+							<a href="https://leetcode.com/problems/two-sum/" target="_blank">Leetcode</a>
+							<br>
+							<a href="https://www.interviewbit.com/problems/2-sum/" target="_blank">InterviewBit</a>	
+						</ul>
+						<h5>Solution:</h5>
+						<script src="https://gist.github.com/ankitthakur00/0285fa29e9175fe7d605e26251d79d2a.js"></script>
+						<br>
+						<br>
+						<br>
+						<br>
+					</section>
+					<section class="docs-section" id="item-1-2">
+						<h2 class="section-heading">2. Zero Sum Subarrays</h2>
+						<p>Given an array of integers,check if array contains a subarray having zero sum.</p>
+						<h5>Refer:</h5>
+						<ul>
+							<a href="https://practice.geeksforgeeks.org/problems/subarray-with-0-sum/0" target="_blank">GeeksForGeeks</a>
+							<br>
+						</ul>
+						<h5>Solution:</h5>
+						<script src="https://gist.github.com/ankitthakur00/30121dd369474bc998b1e375d4ce4d0c.js"></script>
+						<br>
+						<br>
+						<br>
+						<br>
+					</section><!--//section-->
+					<section class="docs-section" id="item-1-3">
+						<h2 class="section-heading">3. Subarray with sum equal to K</h2>
+						<p>Given an array of integers and an integer k, you need to find the total number of continuous subarrays whose sum equals to k.</p>
+						<h5>Refer:</h5>
+						<ul>
+							<a href="https://leetcode.com/problems/subarray-sum-equals-k/" target="_blank">Leetcode</a>
+							<br>
+				
+							<a href="https://www.interviewbit.com/problems/counting-subarrays/
+							target="_blank">InterviewBit</a>
+							
+						</ul>
+						<h5>Solution:</h5>
+						<script src="https://gist.github.com/ankitthakur00/73f4028ebcd1af1f728268332bc6cb3c.js"></script>
+						<br>
+						<br>
+						<br>
+						<br>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-1-3">
+						<h2 class="section-heading">3. Subarray with sum equal to K</h2>
+						<p>Given an array of integers and an integer k, you need to find the total number of continuous subarrays whose sum equals to k.</p>
+						<h5>Refer:</h5>
+						<ul>
+							<a href="https://leetcode.com/problems/subarray-sum-equals-k/" target="_blank">Leetcode</a>
+							<br>
+				
+							<a href="https://www.interviewbit.com/problems/counting-subarrays/""
+							target="_blank">InterviewBit</a>
+							
+						</ul>
+						<h5>Solution:</h5>
+						<script src="https://gist.github.com/ankitthakur00/73f4028ebcd1af1f728268332bc6cb3c.js"></script>
+						<br>
+						<br>
+						<br>
+						<br>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-1-4">
+						<h2 class="section-heading">4. Sort binary Array</h2>
+						<p>Given an array of integers and an integer k, you need to find the total number of continuous subarrays whose sum equals to k.</p>
+						<h5>Refer:</h5>
+						<ul>
+							<a href="http://users.monash.edu/~lloyd/tildeAlgDS/Sort/Flag/" target="_blank">Dutch National Flag Algorithm</a>
+							<br>
+							<a href="https://www.geeksforgeeks.org/sort-binary-array-using-one-traversal/"target="_blank">GeeksForGeeks</a>
+							
+						</ul>
+						<h5>Solution:</h5>
+						<script src="https://gist.github.com/ankitthakur00/83fa70ca094ac7a5ac7c8b2619120c66.js"></script>
+						<br>
+						<br>
+						<br>
+						<br>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-1-5">
+						<h2 class="section-heading">5. Find Duplicate in an Array</h2>
+						<p>Given a read only array of n + 1 integers between 1 and n, find one number that repeats in linear time using less than O(n) space and traversing the stream sequentially O(1) times.
+						</p>
+						<h5>Refer:</h5>
+						<ul>
+							<a href="https://www.interviewbit.com/problems/find-duplicate-in-array/" target="_blank">InterviewBit</a>
+							<br>
+							<a href="https://leetcode.com/problems/find-the-duplicate-number/" target="_blank">Leetcode</a>
+							<br>
+							<a href="https://medium.com/solvingalgo/solving-algorithmic-problems-find-a-duplicate-in-an-array-3d9edad5ad41"target="_blank">Medium Article</a>
+							<br>
+						</ul>
+						<h5>Solution:</h5>
+						<script src="https://gist.github.com/ankitthakur00/7c25af819b808306999d742aca610e6a.js"></script>
+						<br>
+						<br>
+						<br>
+						<br>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-1-6">
+						<h2 class="section-heading">6. Maximum Subarray</h2>
+						<p>Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
+						</p>
+						<h5>Refer:</h5>
+						<ul>
+							<a href="https://leetcode.com/problems/maximum-subarray/" target="_blank">Leetcode</a>
+							<br>
+							<a href="https://www.interviewbit.com/problems/max-non-negative-subarray/" target="_blank">InterviewBit</a>
+							<br>
+							<p>Extension of the above problem could be Finding maximum length sub-array having equal number of 0’s and 1’s.</p>
+							<h6>Approach</h6>
+							<p>Replace all 0 with -1 and find maximum length zero sum subarray.
+							<a href="https://practice.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1"target="_blank">GeeksForGeeks</a>
+							<br>
+						</ul>
+						<h5>Solution:</h5>
+						<script src="https://gist.github.com/ankitthakur00/230a01f4a44aac4dd9da6607cd6a2f6f.js"></script>
+						<br>
+						<br>
+						<br>
+						<br>
+					</section><!--//section-->
+
+
+					
+			    </article>
+			    
+			    <article class="docs-article" id="section-2">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Linked List</h1>
+					    <section class="docs-intro">
+						    <p>Like arrays, linked lists are used to represent sequential data. The benefit of linked lists is that insertion and deletion from anywhere in the list is O(1) whereas in arrays the following elements will have to be shifted.
+
+								Adding a dummy node at the head and/or tail might help to handle many edge cases where operations have to be performed at the head or the tail. The presence of dummy nodes essentially ensures that operations will never have be done on the head or the tail, thereby removing a lot of headache in writing conditional checks to dealing with null pointers. Be sure to remember to remove them at the end of the operation.
+								
+								Sometimes linked lists problem can be solved without additional storage. Try to borrow ideas from reverse a linked list problem.
+								
+								For deletion in linked lists, you can either modify the node values or change the node pointers. You might need to keep a reference to the previous element.
+								
+								For partitioning linked lists, create two separate linked lists and join them back together.
+								
+								Linked lists problems share similarity with array problems, think about how you would do it for an array and try to apply it to a linked list.
+								
+								Two pointer approaches are also common for linked lists. For example:
+								
+								Getting the kth from last node - Have two pointers, where one is k nodes ahead of the other. When the node ahead reaches the end, the other node is k nodes behind
+								Detecting cycles - Have two pointers, where one pointer increments twice as much as the other, if the two pointers meet, means that there is a cycle
+								Getting the middle node - Have two pointers, where one pointer increments twice as much as the other. When the faster node reaches the end of the list, the slower node will be at the middle.
+							</p>
+						<h5>Refer:</h5>
+						<a href="https://medium.com/basecs/whats-a-linked-list-anyway-part-1-d8b7e6508b9d" target="_blank">Introduction Linked List</a>
+						<br>
+						<h5>Basic Structure of list:</h5>
+						<script src="https://gist.github.com/ankitthakur00/189ec1368132423049eb458e18ab1951.js"></script>	
+						<br>
+					</section><!--//docs-intro-->
+					</header>
+					
+				     <section class="docs-section" id="item-2-1">
+						<h2 class="section-heading">1. Reverse A Linked List</h2>
+						<p>
+							Reverse a singly linked list.
+							<br>Example:<br>Input: 1->2->3->4->5->NULL <br>Output: 5->4->3->2->1->NULL
+						</p>
+						<h5>Refer:</h5>
+						<a href="https://leetcode.com/problems/reverse-linked-list/" target="_blank">Leetcode</a>
+						<br>
+						<h5>Solution:</h5>
+						<script src="https://gist.github.com/ankitthakur00/bc404a169731b8774ca580ec90c5ceb8.js"></script>	
+						<br>
+						<h5>Additional problem</h5>
+						<a href="https://www.interviewbit.com/problems/reverse-link-list-ii/" target="_blank">InterviewBit</a>
+						<br>	
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-2-2">
+						<h2 class="section-heading">2. Detect Cycle in Linked List</h2>
+						<p>
+							Given head, the head of a linked list, determine if the linked list has a cycle in it.
+						</p>
+						<h5>Refer:</h5>
+						<a href="https://medium.com/jerry-coding/floyd-cycle-detection-algorithm-7504640643bc" target="_blank">Floyd Cycle Detection</a>
+						<br>
+						<a href="https://leetcode.com/problems/linked-list-cycle/" target="_blank">Leetcode</a>
+						<br>
+						<a href="https://www.interviewbit.com/problems/list-cycle/" target="_blank">InterviewBit</a>
+							
+						<br>
+						<h5>Solution:</h5>
+						<script src="https://gist.github.com/ankitthakur00/d1f9d8238654cc39d43b261846971edc.js"></script>
+						<br>
+						<h5>Additional problem</h5>
+						<a href="https://leetcode.com/problems/linked-list-cycle-ii/" target="_blank">Leetcode</a>
+						<br>	
+					</section><!--//section-->
+				
+
+					<section class="docs-section" id="item-2-3">
+						<h2 class="section-heading">3. Merge Two Sorted Linked List</h2>
+						<p>
+							Merge two sorted linked lists and return it as a new sorted list. The new list should be made by splicing together the nodes of the first two lists.
+						</p>
+						<h5>Refer:</h5>
+						<a href="https://leetcode.com/problems/merge-two-sorted-lists/" target="_blank">LeetCode</a>
+						<br>
+						<a href="https://www.interviewbit.com/problems/merge-two-sorted-lists/" target="_blank">InterviewBit</a>
+						<br>
+						<a href="https://medium.com/enjoy-algorithm/merge-two-sorted-linked-lists-such-that-merged-list-is-in-reverse-order-ffbc9abf8ecb" target="_blank">Medium Article</a>
+							
+						<br>
+						<h5>Solution:</h5>
+						<script src="https://gist.github.com/ankitthakur00/8598ac24f0542605448f95262739120a.js"></script>
+						<br>
+						
+					</section><!--//section-->
+
+
+			    </article><!--//docs-article-->
+			    
+			    
+			    <article class="docs-article" id="section-3">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Tree</h1>
+					    <section class="docs-intro">
+						    <p>A tree is an undirected and connected acyclic graph.
+
+								Recursion is a common approach for trees. When you notice that the subtree problem can be used to solve the entire problem, try using recursion.
+								
+								When using recursion, always remember to check for the base case, usually where the node is null.
+								
+								When you are asked to traverse a tree by level, use breadth-first search.
+								
+								Sometimes it is possible that your recursive function needs to return two values.
+								
+								If the question involves summation of nodes along the way, be sure to check whether nodes can be negative.
+								
+								You should be very familiar with writing pre-order, in-order, and post-order traversal recursively. As an extension, challenge yourself by writing them iteratively. Sometimes interviewers ask candidates for the iterative approach, especially if the candidate finishes writing the recursive approach too quickly.</p>
+						<h5>Refer:</h5>
+		
+						<a href="https://medium.com/basecs/leaf-it-up-to-binary-trees-11001aaf746d" target="_blank">Basics of Trees</a>
+						<br>
+						<a href="https://towardsdatascience.com/4-types-of-tree-traversal-algorithms-d56328450846" target="_blank">Tree Traversals</a>
+						<br>
+						<a href="https://leetcode.com/problems/binary-tree-postorder-traversal/discuss/45621/preorder-inorder-and-postorder-traversal-iterative-java-solution" target="_blank">Traversal Iterative</a>					</section><!--//docs-intro-->
+						<br>
+						<h5>Tree Structure</h5>
+						<script src="https://gist.github.com/ankitthakur00/8de109ee932aad09de0dc3f8537e53ec.js"></script>
+					</header>
+
+
+				     <section class="docs-section" id="item-3-1">
+						<h2 class="section-heading">1. Maximum Depth of Tree</h2>
+						<p> Given a binary tree, find its maximum depth.
+
+							The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.</p>
+					<h5>Refer:</h5>
+					<a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/ " target="_blank">LeetCode</a>
+					<br>
+					<a href="https://www.interviewbit.com/problems/max-depth-of-binary-tree/" target="_blank">InterviewBit</a>
+					<br>
+					<h5>Solution</h5>
+					<script src="https://gist.github.com/ankitthakur00/1162a350d2f65a19667b819878c2267b.js"></script>
+					<br><br><br><br><br><br>
+
+				</section><!--//section-->
+					
+					<section class="docs-section" id="item-3-2">
+						<h2 class="section-heading">2. Same Tree</h2>
+						<p>Given two binary trees, write a function to check if they are the same or not.
+
+							Two binary trees are considered the same if they are structurally identical and the nodes have the same value.</p>
+							<h5>Refer:</h5>
+							<a href="https://leetcode.com/problems/same-tree/" target="_blank">LeetCode</a>
+							<br>
+							<a href="https://www.interviewbit.com/problems/identical-binary-trees/" target="_blank">InterviewBit</a>
+							<br>
+							<h5>Solution</h5>
+							<script src="https://gist.github.com/ankitthakur00/48536af39a84950ac4a0535f1bae42c6.js"></script>
+							<br><br><br><br><br><br>
+						</section><!--//section-->
+					
+					<section class="docs-section" id="item-3-3">
+						<h2 class="section-heading">3 . Invert Binary Tree</h2>
+						<p>Invert the given binary tree.</p>
+						<h5>Refer:</h5>
+							<a href="https://leetcode.com/problems/invert-binary-tree/" target="_blank">LeetCode</a>
+							<br>
+							<a href="https://www.interviewbit.com/problems/invert-the-binary-tree/" target="_blank">InterviewBit</a>
+							<br>
+							<h5>Solution</h5>
+							<script src="https://gist.github.com/ankitthakur00/be5b5f96b9b26b921223eebff7ef7dc5.js"></script>
+							<br><br><br><br><br><br>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="section-4">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Dynammic Programming</h1>
+					    <section class="docs-intro">
+							<p>Those who can't remember their past are condemn to repeat it.</p>
+		
+							<p> Dynamic programming is basically, recursion plus using common sense. What it means is that recursion allows you to express the value of a function in terms of other values of that function. Where the common sense tells you that if you implement your function in a way that the recursive calls are done in advance, and stored for easy access, it will make your program faster. This is what we call Memoization - it is memorizing the results of some specific states, which can then be later accessed to solve other sub-problems.
+								<br>
+								The intuition behind dynamic programming is that we trade space for time, i.e. to say that instead of calculating all the states taking a lot of time but no space, we take up space to store the results of all the sub-problems to save time later.
+								<br>
+								Let's try to understand this by taking an example of Fibonacci numbers.
+								<br>
+								Fibonacci (n) = 1; if n = 0<br>
+								Fibonacci (n) = 1; if n = 1<br>
+								Fibonacci (n) = Fibonacci(n-1) + Fibonacci(n-2)
+								<br>
+								So, the first few numbers in this series will be: 1, 1, 2, 3, 5, 8, 13, 21... and so on!
+								<br></p>
+								<h5>A code for it using pure recursion:</h5>
+								<script src="https://gist.github.com/ankitthakur00/7127fa53b185a5dc3a1ff700c6520b0a.js"></script>
+								<br>
+								<h5> Using Dynamic Programming approach with memoization:</h5>
+								<script src="https://gist.github.com/ankitthakur00/d3b2a9e1a230bd57dea2a7347a583d4d.js"></script>
+
+								<h5>Refer:</h5>
+								<a href="https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/tutorial/" target="_blank">Explaining DP</a><br>
+								<a href="https://www.quora.com/How-should-I-explain-dynamic-programming-to-a-4-year-old/answer/Jonathan-Paulson" target="_blank">Explaining DP-2</a><br>
+								<a href="https://www.freecodecamp.org/news/demystifying-dynamic-programming-3efafb8d4296/" target="_blank">Demystifying DP</a><br>
+								<a href="https://dev.to/nikolaotasevic/dynamic-programming--7-steps-to-solve-any-dp-interview-problem-3870" target="_blank">Steps to Approach A DP Problem</a>
+							</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-4-1">
+						<h2 class="section-heading">Section Item 4.1</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-4-2">
+						<h2 class="section-heading">Section Item 4.2</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-4-3">
+						<h2 class="section-heading">Section Item 4.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+					    <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+				        <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Ankit Thakur</a></small>
+				        <ul class="social-list list-unstyled pt-4 mb-0">
+						    <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li> 
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+				        </ul><!--//social-list-->
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+    
+   
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/jquery.scrollTo.min.js"></script>
+    <script src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+
+</body>
+</html> 
+
